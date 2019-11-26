@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "author": "Harrison Ford"
+    },
+    {
+      "id": 2,
+      "body": "Donec vel lorem quis orci posuere viverra vitae nec felis. Nam placerat lacus neque, eget volutpat neque iaculis eget.",
+      "author": "Carrie Fisher"
+    },
+    {
+      "id": 3,
+      "body": "In et nisl dapibus, condimentum lectus ut, auctor magna. Integer sit amet mollis lectus.",
+      "author": "Mark Hamill"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "I totally agree",
+      "postId": 1,
+      "author": "Mark Hamill"
+    },
+    {
+      "id": 2,
+      "body": "I, however, disagree",
+      "postId": 1,
+      "author": "James Earl Jones"
+    }
+  ]
+}
