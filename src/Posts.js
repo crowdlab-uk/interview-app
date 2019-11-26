@@ -18,6 +18,7 @@ function Posts({ posts }: Props) {
       {posts.map((post) => (
         <Post key={post.id} post={post} />
       ))}
+      <button onClick={() => alert('TODO: make this work')}>Add Post</button>
     </div>
   );
 }
