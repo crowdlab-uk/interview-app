@@ -7,7 +7,11 @@ function App() {
   return (
     <div className="App">
       <h1>Post listing</h1>
-      <PostsContainer>{({ posts }) => <Posts posts={posts} />}</PostsContainer>
+      <PostsContainer>
+        {({ posts, updatePosts }) => (
+          <Posts updatePosts={updatePosts} posts={posts} />
+        )}
+      </PostsContainer>
     </div>
   );
 }

@@ -2,11 +2,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+type Props = {
+  updatePosts: () => void,
+};
+
 const FormWrapper = styled.div`
   padding: 12px;
 `;
 
-function AddPostForm() {
+function AddPostForm({ updatePosts }: Props) {
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('');
 
@@ -28,7 +32,7 @@ function AddPostForm() {
       },
       body: JSON.stringify({ body, author }),
     })
-      .then(() => alert('added post'))
+      .then(() => updatePosts())
       .catch(() => alert('error adding post'));
   };
 

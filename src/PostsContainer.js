@@ -5,11 +5,13 @@ const fetchPosts = () => fetch('/posts').then((resp) => resp.json());
 function PostsContainer({ children }) {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
+  const updatePosts = () => {
     fetchPosts().then(setPosts);
-  }, []);
+  };
 
-  return children({ posts });
+  useEffect(updatePosts, []);
+
+  return children({ posts, updatePosts });
 }
 
 export default PostsContainer;

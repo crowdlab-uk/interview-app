@@ -11,15 +11,16 @@ type PostType = {
 
 type Props = {
   posts: Array<PostType>,
+  updatePosts: () => void,
 };
 
-function Posts({ posts }: Props) {
+function Posts({ posts, updatePosts }: Props) {
   return (
     <div>
       {posts.map((post) => (
         <Post key={post.id} post={post} />
       ))}
-      <AddPost />
+      <AddPost updatePosts={updatePosts} />
     </div>
   );
 }
