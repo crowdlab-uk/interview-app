@@ -1,6 +1,7 @@
 // @flow
-import React from 'react';
+import React, { useState } from 'react';
 import Post from './Post';
+import AddPost from './AddPost';
 
 type PostType = {
   id: number,
@@ -13,12 +14,15 @@ type Props = {
 };
 
 function Posts({ posts }: Props) {
+  const [isShown, setIsShown] = useState(false);
+
   return (
     <div>
       {posts.map((post) => (
         <Post key={post.id} post={post} />
       ))}
-      <button onClick={() => alert('TODO: make this work')}>Add Post</button>
+      <button onClick={() => setIsShown(true)}>Add Post</button>
+      {isShown && <AddPost />}
     </div>
   );
 }

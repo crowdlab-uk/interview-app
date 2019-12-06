@@ -14,6 +14,16 @@
       "id": 3,
       "body": "In et nisl dapibus, condimentum lectus ut, auctor magna. Integer sit amet mollis lectus.",
       "author": "Mark Hamill"
+    },
+    {
+      "content": "test",
+      "author": "test",
+      "id": 4
+    },
+    {
+      "content": "Test 2 ",
+      "author": "hello world",
+      "id": 5
     }
   ],
   "comments": [
