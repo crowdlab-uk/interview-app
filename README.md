@@ -25,7 +25,7 @@ You can unit or integration test this if you would like, but it is not required.
 ### Clone the repo
 
 ```sh
-  git clone https://github.com/typicode/json-server
+  git clone https://github.com/crowdlab-uk/interview-app
 ```
 
 ### Install dependencies
