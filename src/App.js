@@ -1,13 +1,17 @@
-import React from 'react';
-import './App.css';
-import PostsContainer from './PostsContainer';
-import Posts from './Posts';
+import React from "react";
+import "./App.css";
+import PostsContainer from "./PostsContainer";
+import Posts from "./Posts";
 
 function App() {
   return (
     <div className="App">
       <h1>Post listing</h1>
-      <PostsContainer>{({ posts }) => <Posts posts={posts} />}</PostsContainer>
+      <PostsContainer>
+        {({ posts, refreshPosts }) => (
+          <Posts posts={posts} refreshPosts={refreshPosts} />
+        )}
+      </PostsContainer>
     </div>
   );
 }

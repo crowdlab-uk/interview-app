@@ -1,15 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-const fetchPosts = () => fetch('/posts').then((resp) => resp.json());
+const fetchPosts = () => fetch("/posts").then(resp => resp.json());
 
 function PostsContainer({ children }) {
   const [posts, setPosts] = useState([]);
 
+  const fetchAndSet = () => fetchPosts().then(setPosts);
+
   useEffect(() => {
-    fetchPosts().then(setPosts);
+    fetchAndSet();
   }, []);
 
-  return children({ posts });
+  return children({ posts, refreshPosts: fetchAndSet });
 }
 
 export default PostsContainer;
