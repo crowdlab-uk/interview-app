@@ -1,21 +1,21 @@
 // @flow
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 type PostType = {
   id: number,
   body: string,
-  author: string,
+  author: string
 };
 
 type Props = {
-  post: PostType,
+  post: PostType
 };
 
 const Wrapper = styled.div`
   border: 1px solid #444;
-  padding: 12px;
-  margin: 12px;
+  padding: 6px;
+  margin: 6px;
 `;
 
 const CommentsWrapper = styled.div`
