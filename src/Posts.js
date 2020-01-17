@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import Post from './Post';
+import AddPost from './AddPost'
 
 type PostType = {
   id: number,
@@ -18,7 +19,7 @@ function Posts({ posts }: Props) {
       {posts.map((post) => (
         <Post key={post.id} post={post} />
       ))}
-      <button onClick={() => alert('TODO: make this work')}>Add Post</button>
+      <AddPost />
     </div>
   );
 }
