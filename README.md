@@ -22,22 +22,16 @@ You can unit or integration test this if you would like, but it is not required.
 
 ## How to
 
-### Clone the repo
+### Fork the repo
 
-```sh
-  git clone https://github.com/crowdlab-uk/interview-app
-```
+![Fork Image](https://docs.github.com/assets/images/help/repository/fork_button.jpg)
+
+### Clone the repo
 
 ### Install dependencies
 
 ```sh
   npm install
-```
-
-### Create a branch
-
-```sh
-  git checkout -b your-branch-name
 ```
 
 ### Run it
@@ -46,4 +40,4 @@ You can unit or integration test this if you would like, but it is not required.
   npm run start
 ```
 
-### Make some changes, and raise a Pull Request
+### Make some changes, and raise a Pull Request against the original repo
