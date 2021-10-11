@@ -1,3 +1,17 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+  border-radius: 8px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px;
+
+}
+
+
 .App {
   text-align: left;
   padding: 12px;
@@ -20,4 +34,19 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.form-field{
+  margin: 10px;
+  font-size: 15px;
+  font: bolder;  
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.form-input{
+  margin-left: 15px;
 }

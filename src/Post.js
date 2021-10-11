@@ -13,14 +13,25 @@ type Props = {
 };
 
 const Wrapper = styled.div`
-  border: 1px solid #444;
-  padding: 6px;
-  margin: 6px;
+border: 1px solid #444;
+border-radius: 8px;
+border-color: black;
+color: black;
+padding: 12px;
+margin: 15px 8px;
+box-shadow: 5px 10px 10px #888;
 `;
 
 const CommentsWrapper = styled.div`
   margin-left: 20px;
+  border: .5px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px
 `;
+
+
+
 
 function Post({ post }: Props) {
   return (

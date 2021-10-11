@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+
 class AddPost extends React.Component {
     constructor(props) {
         super(props);
@@ -32,25 +35,28 @@ class AddPost extends React.Component {
             body: JSON.stringify(data),
         })
     }
+
     render() { 
         return (
             <form onSubmit={this.handleSubmit}>
-                <div>
+                <div className = "form-field">
                     <label>
                         Post Text
-                        <textarea value={this.state.postText} onChange={this.changePostText}></textarea>
                     </label>
+                    <textarea value={this.state.postText} onChange={this.changePostText} className="form-input" required></textarea>
                 </div>
-                <div>
+                <div className = "form-field">
                     <label>
                         Author
-                        <input type="text" value={this.state.postAuthor} onChange={this.changePostAuthor}></input>
                     </label>
+                    <input type="text" value={this.state.postAuthor} onChange={this.changePostAuthor} className="form-input" required></input>
                 </div>
-                <button type="submit">Submit Post</button>
+                <button type="submit" className = "Subpost" > Submit Post </button>
+            
             </form>
         )
     }
+    
 
 }
  
